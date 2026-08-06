@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Menu</title>
+    <title>Surya Restaurant | Fresh & Authentic Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    
     <header>
-        <h1>Surya Restaurant</h1>
-        <p>Fresh and tasty food for everyone</p>
+        <div class="header-overlay">
+            <h1>Surya Restaurant</h1>
+            <p>Fresh and tasty food for everyone</p>
+            <a href="#menu" class="btn-primary">Explore Menu</a>
+        </div>
     </header>
+
 
     <nav>
         <a href="#">Home</a>
         <a href="#categories">Categories</a>
         <a href="#menu">Menu</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#location">Location</a>
         <a href="#contact">Contact</a>
     </nav>
+
 
     <section class="categories" id="categories">
         <h2>Food Categories</h2>
         <div class="category-box">
-            <span>Biryani</span>
-            <span>Rice</span>
-            <span>Noodles</span>
-            <span>Starters</span>
-            <span>Desserts</span>
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="biryani">Biryani</button>
+            <button class="category-btn" data-category="rice">Rice</button>
+            <button class="category-btn" data-category="noodles">Noodles</button>
+            <button class="category-btn" data-category="starters">Starters</button>
+            <button class="category-btn" data-category="desserts">Desserts</button>
         </div>
     </section>
 
@@ -34,47 +45,150 @@
         <h2>Our Menu</h2>
 
         <div class="menu-items">
-            <div class="food-card">
-                <h3>Chicken Biryani</h3>
-                <p>Spicy chicken biryani served with raita.</p>
-                <h4>&#8377;180</h4>
+
+            <div class="food-card" data-category="biryani">
+                <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500&q=80" alt="Chicken Biryani">
+                <div class="card-body">
+                    <h3>Chicken Biryani</h3>
+                    <p>Spicy chicken biryani served with raita and mirchi ka salan.</p>
+                    <div class="card-footer">
+                        <span class="price">&#8377;180</span>
+                        <button class="order-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="food-card">
-                <h3>Veg Fried Rice</h3>
-                <p>Rice cooked with fresh vegetables and spices.</p>
-                <h4>&#8377;120</h4>
+
+            <div class="food-card" data-category="rice">
+                <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500&q=80" alt="Veg Fried Rice">
+                <div class="card-body">
+                    <h3>Veg Fried Rice</h3>
+                    <p>Fragrant rice cooked with fresh garden vegetables and aromatic spices.</p>
+                    <div class="card-footer">
+                        <span class="price">&#8377;120</span>
+                        <button class="order-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="food-card">
-                <h3>Paneer Noodles</h3>
-                <p>Soft paneer mixed with tasty noodles.</p>
-                <h4>&#8377;150</h4>
+
+            <div class="food-card" data-category="noodles">
+                <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500&q=80" alt="Paneer Noodles">
+                <div class="card-body">
+                    <h3>Paneer Noodles</h3>
+                    <p>Soft cottage cheese cubes tossed with wok-fried noodles and soy glaze.</p>
+                    <div class="card-footer">
+                        <span class="price">&#8377;150</span>
+                        <button class="order-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="food-card">
-                <h3>Masala Dosa</h3>
-                <p>Crispy dosa filled with potato masala.</p>
-                <h4>&#8377;90</h4>
+            <div class="food-card" data-category="starters">
+                <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?w=500&q=80" alt="Masala Dosa">
+                <div class="card-body">
+                    <h3>Masala Dosa</h3>
+                    <p>Crispy South Indian crepe filled with spiced potato masala and chutneys.</p>
+                    <div class="card-footer">
+                        <span class="price">&#8377;90</span>
+                        <button class="order-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="food-card">
-                <h3>Paneer Tikka</h3>
-                <p>Grilled paneer with simple Indian spices.</p>
-                <h4>&#8377;160</h4>
+            <div class="food-card" data-category="starters">
+                <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&q=80" alt="Paneer Tikka">
+                <div class="card-body">
+                    <h3>Paneer Tikka</h3>
+                    <p>Marinated cottage cheese cubes grilled to perfection in tandoor spices.</p>
+                    <div class="card-footer">
+                        <span class="price">&#8377;160</span>
+                        <button class="order-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="food-card">
-                <h3>Gulab Jamun</h3>
-                <p>Sweet and soft dessert served warm.</p>
-                <h4>&#8377;70</h4>
+            <div class="food-card" data-category="desserts">
+                <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=500&q=80" alt="Gulab Jamun">
+                <div class="card-body">
+                    <h3>Gulab Jamun</h3>
+                    <p>Classic warm milk dumplings soaked in cardamom-flavored sugar syrup.</p>
+                    <div class="card-footer">
+                        <span class="price">&#8377;70</span>
+                        <button class="order-btn"><i class="fa-solid fa-cart-shopping"></i> Order Now</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <section class="reviews" id="reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"The Chicken Biryani here is authentic and rich in flavor! Fast delivery and hot food every time."</p>
+                <h4>- Rajesh K.</h4>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Paneer Tikka was cooked to perfection. Soft, juicy, and well seasoned. Highly recommended!"</p>
+                <h4>- Anitha M.</h4>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★☆</div>
+                <p>"Great place for dining with family. Crispy Dosa and delicious Gulab Jamun to end the meal."</p>
+                <h4>- Suresh Kumar</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="location" id="location">
+        <h2>Find Us Here</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15731.841527785023!2d78.4833!3d9.8500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c50000000001%3A0x0!2sSivaganga%20Main%20Road!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                width="100%" 
+                height="350" 
+                style="border:0; border-radius: 12px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
     <footer id="contact">
-        <p>&copy; 2026 Surya Restaurant</p>
-        <p>Address: sivaganga main road  | Phone: 900334390</p>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Surya Restaurant</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Sivaganga Main Road, Tamil Nadu</p>
+                <p><i class="fa-solid fa-phone"></i> +91 90033 43900</p>
+                <p><i class="fa-solid fa-envelope"></i> contact@suryarestaurant.com</p>
+            </div>
+
+            <div class="footer-hours">
+                <h3>Opening Hours</h3>
+                <p>Monday - Sunday</p>
+                <p><strong>11:00 AM - 10:30 PM</strong></p>
+            </div>
+
+            <div class="footer-socials">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Surya Restaurant. All Rights Reserved.</p>
+        </div>
+        <script src="script.js">
+            
+        </script>
     </footer>
 </body>
 </html>

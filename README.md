@@ -1,12 +1,12 @@
- Surya Restaurant Menu Website
+## Surya Restaurant Menu Website
 
  A simple and responsive restaurant menu website built using HTML and CSS.
 
- Description
+ ## Description
 
 Surya Restaurant Menu Website is a beginner-friendly frontend project that displays a restaurant landing page with food categories, menu items, prices, and contact details. The website uses clean HTML structure and CSS styling to create a responsive layout for desktop and mobile screens.
 
- Features
+## Features
 
 - Restaurant header section
 - Navigation bar
@@ -16,7 +16,7 @@ Surya Restaurant Menu Website is a beginner-friendly frontend project that displ
 - Responsive layout for mobile and tablet screens
 - Simple and clean design
 
- Food Categories
+ ## Food Categories
 
 - Biryani
 - Rice
@@ -24,7 +24,7 @@ Surya Restaurant Menu Website is a beginner-friendly frontend project that displ
 - Starters
 - Desserts
 
- Menu Items
+## Menu Items
 
 - Chicken Biryani
 - Veg Fried Rice
@@ -33,12 +33,12 @@ Surya Restaurant Menu Website is a beginner-friendly frontend project that displ
 - Paneer Tikka
 - Gulab Jamun
 
- Technologies Used
+## Technologies Used
 
 - HTML
 - CSS
 
- Concepts Used
+ ## Concepts Used
 
 - HTML semantic structure
 - CSS styling
@@ -48,13 +48,13 @@ Surya Restaurant Menu Website is a beginner-friendly frontend project that displ
 - Navigation links
 - Card-based layout
 
- How to Run
+ ## How to Run
 
 1. Download or clone this project.
 2. Open the project folder.
 3. Open `index.html` in any web browser.
 
- File Structure
+## File Structure
 
 ```text
 restaurant_mini_project/
@@ -62,7 +62,7 @@ restaurant_mini_project/
 +-- index.html
 +-- style.css
 +-- README.md
-Future Improvements
+## Future Improvements
 Add food images
 Add online order button
 Add restaurant location map
